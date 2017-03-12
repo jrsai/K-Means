@@ -5,12 +5,12 @@ from matplotlib import style
 style.use('ggplot')
 
 #reading the file
-df = pd.read_csv('exercise-1.csv',delimiter=',',skipinitialspace=True)
+df = pd.read_csv('exercise-2.csv',delimiter=',',skipinitialspace=True)
 # making a array list to hold the x values (first column) from the csv file
 x = []
 y = []
-x.extend(np.around(df['sepal_width'],decimals=1)) # assigning the first column values to the array
-y.extend(np.around(df['petal_width'],decimals=1)) # assigning the second column values to the array
+x.extend(np.around(df['x'],decimals=1)) # assigning the first column values to the array
+y.extend(np.around(df['y'],decimals=1)) # assigning the second column values to the array
 # formatting the array so every element in it is to 2 decimal places
 formattedX=['%.2f' % elem for elem in x]
 formattedY=['%.2f' % elem for elem in y]
@@ -19,12 +19,15 @@ formattedY=['%.2f' % elem for elem in y]
 newX = df.as_matrix()
 
 plt.scatter(formattedX,formattedY)
+plt.title('Original Unclustered Data')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.show()
 
 colors = 10*["g","r","c","b","k"]
 
 class K_Means:
-    # toleraence is the percentage of how much the centroid is going to move, max_iter is the max iterations the program will make
+    # tolerance is the percentage of how much the centroid is going to move, max_iter is the max iterations the program will make
     def __init__(self, k = 2, tolerance = 0.001, max_iter = 300):
         self.k = k
         self.tolerance = tolerance
@@ -81,4 +84,8 @@ for classification in clf.classifications:
     for featureset in clf.classifications[classification]:
         plt.scatter(featureset[0], featureset[1], marker = "o", color = color, linewidths = 2)
 
+
+plt.title('Clustered data')
+plt.xlabel('x')
+plt.ylabel('y')
 plt.show()
