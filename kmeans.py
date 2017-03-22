@@ -5,12 +5,12 @@ from matplotlib import style
 style.use('ggplot')
 
 #reading the file
-df = pd.read_csv('exercise-1.csv',delimiter=',',skipinitialspace=True)
+df = pd.read_csv('exercise-5.csv',delimiter=',',skipinitialspace=True)
 # making a array list to hold the x values (first column) from the csv file
 x = []
 y = []
-x.extend(np.around(df['sepal_width'],decimals=1)) # assigning the first column values to the array
-y.extend(np.around(df['petal_width'],decimals=1)) # assigning the second column values to the array
+x.extend(np.around(df['x'],decimals=1)) # assigning the first column values to the array
+y.extend(np.around(df['y'],decimals=1)) # assigning the second column values to the array
 # formatting the array so every element in it is to 2 decimal places
 formattedX=['%.2f' % elem for elem in x]
 formattedY=['%.2f' % elem for elem in y]
@@ -97,4 +97,6 @@ for key in k.classifications:
 plt.title('Clustered data')
 plt.xlabel('x')
 plt.ylabel('y')
+plt.axis('tight')
+plt.savefig("kmeans.png",format='png',bbox_inches='tight', dpi=300)
 plt.show()
