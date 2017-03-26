@@ -1,3 +1,6 @@
+# Data Structures Group Project Part 1 
+# SOFE 2715
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
