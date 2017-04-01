@@ -1,6 +1,3 @@
-# Data Structures Group Project Part 1 
-# SOFE 2715
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,10 +5,61 @@ from matplotlib import style
 style.use('ggplot')
 
 #reading the file
-df = pd.read_csv('exercise-5.csv',delimiter=',',skipinitialspace=True)
+df = pd.read_csv('exercise-2.csv',delimiter=',',skipinitialspace=True)
 # making a array list to hold the x values (first column) from the csv file
+
+class Node(object):
+
+    def __init__(self, data, next=None):
+
+        self.data = data
+        self.next = next
+
+    def __str__(self):
+        return str(self.data)
+
+class LinkedList(object):
+
+    def __init__(self):
+
+        self.head = None
+        self.size = 0
+
+
+    def append(self, data):
+            if not self.head:
+                n = Node(data)
+                self.head = n
+                return
+            else:
+                n = self.head
+
+                while n.next != None:
+                    n = n.next
+
+                new_node = Node(data)
+                n.next = new_node;
+                return
+
+
+    def isEmpty(self):
+        return not self.head
+
+    def printList(self):
+        n = self.head
+
+        while n:
+            print str(n)
+            n = n.next
+
+ll = LinkedList()
 x = []
+for elem in x:
+    ll.append(elem)
 y = []
+for elem in y:
+    ll.append(elem)
+
 x.extend(np.around(df['x'],decimals=1)) # assigning the first column values to the array
 y.extend(np.around(df['y'],decimals=1)) # assigning the second column values to the array
 # formatting the array so every element in it is to 2 decimal places
@@ -31,7 +79,7 @@ plt.show()
 colors = 10*["g","r","c","b","k"]
 
 class K_Means:
-    # toleraence is the percentage of how much the centroid is going to move, max_iter is the max iterations the program will make
+    # tolerance is the percentage of how much the centroid is going to move, max_iter is the max iterations the program will make
     def __init__(self, k = 2, tolerance = 0.001, max_iter = 300):
         self.k = k
         self.tolerance = tolerance
@@ -101,5 +149,5 @@ plt.title('Clustered data')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.axis('tight')
-plt.savefig("kmeans.png",format='png',bbox_inches='tight', dpi=300)
+plt.savefig("kmeans1.png",format='png',bbox_inches='tight', dpi=300)
 plt.show()
