@@ -1,2 +1,2 @@
-# DataStructuresProject
-Data Structures Course Project Repository
+# Data Structures Course Project Repo
+
