@@ -5,7 +5,7 @@ Collaborated with 3 fellow Software Engineering Students to implement K-Means us
 <h1> Description </h1>
 <p> K-Means helps plot dot and find clusters to help show a trend or pattern of the given data set.  </p>
 
-<h1> What is does </h1>
+<h1> What it does </h1>
 <p> Takes a data 2-D data set as input along with the number of clusters wanted and computes the K-Means to give a scatter plot showing the clusters. </p>
 
 <p align="center">
