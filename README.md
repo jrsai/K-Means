@@ -51,7 +51,7 @@ Collaborated with 3 fellow Software Engineering Students to implement K-Means us
 </p>
 
 <h1> Challenges </h1>
-<p> Algorithm was difficult to implment as the equation to determine the K was confusing in the pseudocode. </p>
+<p> Algorithm was difficult to implement as the equation to determine the K was confusing in the pseudocode. </p>
 
 <h1> Future plans </h1>
 <p>
