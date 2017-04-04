@@ -1,20 +1,5 @@
 # Data Structures Course Project Repo
 
-<p align="center">
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans0.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans1.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans2.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans3.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans4.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans5.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans6.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans7.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans8.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans9.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans10.png" />
-<img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans11.png" />
-</p>
-
 Collaborated with 3 fellow Software Engineering Students to implement K-Means using Lolyd's Algorithm which was also implemented along with a linked list as one of the data strucutres.   
 
 <h1> Description </h1>
@@ -22,6 +7,48 @@ Collaborated with 3 fellow Software Engineering Students to implement K-Means us
 
 <h1> What is does </h1>
 <p> Takes a data 2-D data set as input along with the number of clusters wanted and computes the K-Means to give a scatter plot showing the clusters. </p>
+
+<p align="center">
+<table> 
+<h1> Unclustered and Clustered plots built using given data </h1>
+<tr> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans0.png" /> </td>
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans1.png" /> </td> 
+</tr> 
+<tr> 
+<td colspan=2> 2 clusters </td>
+</tr>
+<tr> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans2.png" /> </td> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans3.png" /> </td> 
+</tr>
+<tr> 
+<td colspan=2> 4 clusters </td>
+</tr>
+<tr>
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans4.png" /> </td> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans5.png" /> </td> 
+</tr>
+<tr> 
+<td colspan=2> 3 clusters </td>
+</tr>
+<tr>
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans6.png" /> </td> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans7.png" /> </td> 
+</tr>
+<tr>
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans8.png" /> </td> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans9.png" /> </td> 
+</tr>
+<tr>
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans10.png" /> </td> 
+<td> <img src="https://github.com/jrsai/K-Means/blob/master/images/kmeans11.png" /> </td> 
+</tr>
+<tr> 
+<td colspan=2> 4 clusters </td>
+</tr>
+</table> 
+</p>
 
 <h1> Challenges </h1>
 <p> Algorithm was difficult to implment as the equation to determine the K was confusing in the pseudocode. </p>
