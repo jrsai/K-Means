@@ -1,12 +1,12 @@
 # Data Structures Course Project Repo
 
-Collaborated with 3 fellow Software Engineering Students to implement K-Means using Lolyd's Algorithm which was also implemented along with a linked list as one of the data strucutres.   
+Collaborated with 3 fellow Software Engineering Students to implement K-Means using Lolyd's Algorithm which was also implemented along with a linked list as one of the data structures.   
 
 <h1> Description </h1>
 <p> K-Means helps plot dot and find clusters to help show a trend or pattern of the given data set.  </p>
 
 <h1> What it does </h1>
-<p> Takes a data 2-D data set as input along with the number of clusters wanted and computes the K-Means to give a scatter plot showing the clusters. </p>
+<p> Takes a data 2-D data set as input along with the number of clusters wanted and computes the K-Means to give a scatter plot showing the clusters. This was done mostly based on our implementation of Lloyd's Algorithm. </p>
 
 <p align="center">
 <table> 
@@ -49,7 +49,6 @@ Collaborated with 3 fellow Software Engineering Students to implement K-Means us
 </tr>
 </table> 
 </p>
-
 <h1> Challenges </h1>
 <p> Algorithm was difficult to implement as the equation to determine the K was confusing in the pseudocode. </p>
 
