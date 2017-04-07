@@ -6,8 +6,8 @@ style.use('ggplot')
 
 #reading the file
 df = pd.read_csv('exercise-2.csv',delimiter=',',skipinitialspace=True)
-# making a array list to hold the x values (first column) from the csv file
 
+# making a linked list to hold the x values (first column) from the csv file
 class Node(object):
 
     def __init__(self, data, next=None):
