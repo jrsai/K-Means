@@ -50,10 +50,12 @@ Collaborated with 3 fellow Software Engineering Students to implement K-Means us
 </table> 
 </p>
 <h1> Challenges </h1>
-<p> Algorithm was difficult to implement as the equation to determine the K was confusing in the pseudocode. </p>
+<p> <ul> <li> Algorithm was difficult to implement as the equation to determine the K was confusing in the pseudocode. </li>
+<li> Since we were not able to use any libraries such as Open CV, we had to use our experience of implementing algorithms through what we had learnt in the course. </li> </ul> </p>
 
 <h1> Future plans </h1>
 <p>
 <ul> <li>Make computations faster for bigger data sets </li> 
+<li> Decrease time complexity </li> 
 </ul> 
 </p>
